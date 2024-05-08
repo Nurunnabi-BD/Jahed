@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:wght@700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@400;700&family=Tiro+Bangla:ital@0;1&family=Young+Serif&display=swap');
+@-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-size: 0.5rem;
+    font-family: "Tiro Bangla", serif;
+}
+img{
+    max-width: 100%;
+}
+header{
+    
+}
+.header-cotent{
+    height: 1.3rem;
+    overflow:hidden;
+    position: relative;
+    background-color: rgb(255, 4, 4);
+    color: rgb(255, 255, 255);
+    padding: 0.3rem 0;
+}
+.header-cotent h1{
+    text-wrap: nowrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+     /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 10s linear infinite;
+}
+.header-content2{
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding: 0.2rem 0;
+}
+.sec1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+.sec1 div h3{
+    text-align: center;
+}
+.sec1-image h2{
+    font-size: 0.5rem;
+    text-align: center;
+}
+.sec2{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.sec2 div h2{
+    font-size: 0.5rem;
+    text-align: center;
+}
+.Padobi{
+    text-align: center;
+}
+.sec3{
+    padding: 1rem;
+}
+table, th, td {
+    border:1px solid black;
+}
+table{
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: center;
+}
