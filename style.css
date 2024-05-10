@@ -95,16 +95,23 @@ header{
 .sec3{
     padding: 1rem;
 }
-table, th, td {
-    border:1px solid black;
+.sec3 ul{
+    padding-left: 0.8rem;
+    margin-top: 0.7rem;
 }
-table{
-    width: 100%;
-    font-size: 0.6rem;
-    font-weight: bold;
+.sec3 ul li{
+    font-size: 0.7rem;
+}
+.button{
     text-align: center;
+    margin: 2rem 0;
 }
-main{
-    background-color: rgb(220, 245, 245);
-    
+.button a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
 }
